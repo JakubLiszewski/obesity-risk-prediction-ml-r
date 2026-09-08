@@ -17,7 +17,7 @@ The workflow compares three models—Standard Decision Tree, Pruned/Controlled D
 * **Evaluation & Metrics:** `ROCR` (ROC, AUC, Lift, Precision-Recall), custom Confusion Matrix evaluation (Sensitivity, Specificity, F1-score, Cohen's Kappa)
 
 ## Project Structure
-* `model_pipeline.R` - Complete script covering data preprocessing, IV calculation, model training, and performance evaluation.
+* `obesity_model.R` - Complete script covering data preprocessing, IV calculation, model training, and performance evaluation.
 
 ## Model Comparison Summary (Test Set)
 | Model | Accuracy | Sensitivity | Specificity | Precision | F1-Score | Kappa | AUC |
