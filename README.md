@@ -1,14 +1,14 @@
 # Obesity Risk Prediction & Behavioral Analysis (Machine Learning in R)
 
 ## Overview
-This repository contains a comprehensive machine learning classification pipeline designed to predict obesity risk based on dietary habits, physical condition, and genetic/demographic factors. The project utilizes a hybrid dataset of 2,111 records (incorporating synthetic data balancing via SMOTE)[cite: 3]. 
+This repository contains a comprehensive machine learning classification pipeline designed to predict obesity risk based on dietary habits, physical condition, and genetic/demographic factors. The project utilizes a hybrid dataset of 2,111 records (incorporating synthetic data balancing via SMOTE). 
 
 The workflow compares three models—Standard Decision Tree, Pruned/Controlled Decision Tree, and Random Forest—evaluating their performance using rigorous metrics including Information Value (IV), ROC/AUC, Lift, and Precision-Recall curves.
 
 ## Key Findings & Business Insights
-* **Dominant Predictor:** `family_history_with_overweight` emerged as the strongest predictor by far, boasting an Information Value (IV) of **1.3194**[cite: 3].
-* **Behavioral Factors:** Snacking habits (`CAEC`) and meal frequency (`NCP`) play a critical secondary role in determining weight categories[cite: 3].
-* **Best Performing Model:** **Random Forest** significantly outperformed single decision trees, achieving an **Accuracy of 90.2%** and an outstanding **AUC of 0.9724** on the test set, effectively balancing high sensitivity with a low false-positive rate[cite: 4].
+* **Dominant Predictor:** `family_history_with_overweight` emerged as the strongest predictor by far, boasting an Information Value (IV) of **1.3194**.
+* **Behavioral Factors:** Snacking habits (`CAEC`) and meal frequency (`NCP`) play a critical secondary role in determining weight categories.
+* **Best Performing Model:** **Random Forest** significantly outperformed single decision trees, achieving an **Accuracy of 90.2%** and an outstanding **AUC of 0.9724** on the test set, effectively balancing high sensitivity with a low false-positive rate.
 
 ## Methodology & Tech Stack
 * **Language:** R
@@ -18,7 +18,6 @@ The workflow compares three models—Standard Decision Tree, Pruned/Controlled D
 
 ## Project Structure
 * `model_pipeline.R` - Complete script covering data preprocessing, IV calculation, model training, and performance evaluation.
-* `Report.pdf` - Full detailed academic report with visual charts and statistical interpretations.
 
 ## Model Comparison Summary (Test Set)
 | Model | Accuracy | Sensitivity | Specificity | Precision | F1-Score | Kappa | AUC |
